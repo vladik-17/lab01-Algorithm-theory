@@ -17,3 +17,5 @@ print(my_favorite_movies[:10])      # первый фильм: "Терминат
 print(my_favorite_movies[-15:])     # последний: "Назад в будущее"
 print(my_favorite_movies[12:25])    # второй: "Пятый элемент"
 print(my_favorite_movies[-22:-17])  # второй с конца: "Чужие"
+
+
