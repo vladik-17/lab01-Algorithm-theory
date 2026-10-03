@@ -13,9 +13,24 @@ my_favorite_movies = 'Терминатор, Пятый элемент, Ават�
 # как указано в задании!
 
 # TODO здесь ваш код
-print(my_favorite_movies[:10])      # первый фильм: "Терминатор"
-print(my_favorite_movies[-15:])     # последний: "Назад в будущее"
-print(my_favorite_movies[12:25])    # второй: "Пятый элемент"
-print(my_favorite_movies[-22:-17])  # второй с конца: "Чужие"
+#print(my_favorite_movies[:10])      # первый фильм: "Терминатор"
+#print(my_favorite_movies[-15:])     # последний: "Назад в будущее"
+#print(my_favorite_movies[12:25])    # второй: "Пятый элемент"
+#print(my_favorite_movies[-22:-17])  # второй с конца: "Чужие"
 
 
+# Сделать обратную фильтрацию (ссылки берем из первого вывода)
+movies = [
+    my_favorite_movies[:10],      # первый: "Терминатор"
+    my_favorite_movies[-15:],     # последний: "Назад в будущее"
+    my_favorite_movies[12:25],    # второй: "Пятый элемент"
+    my_favorite_movies[-22:-17],  # второй с конца: "Чужие"
+]
+
+# Прямой порядок
+for movie in movies:
+    print(movie)
+
+# Обратный порядок (копия списка, развёрнутая)
+for movie in movies[::-1]:
+    print(movie)

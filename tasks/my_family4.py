@@ -20,10 +20,29 @@ my_family_height = [
 
 # TODO здесь ваш код
 # Ищем отца и печатаем его рост
-for member in my_family_height:
-    if member[0] == 'папа':
-        print(f'Рост отца - {member[1]} см')
+#for member in my_family_height:
+   # if member[0] == 'папа':
+        #print(f'Рост отца - {member[1]} см')
 
-# Суммируем рост всех членов семьи
-total = sum(member[1] for member in my_family_height)
-print(f'Общий рост моей семьи - {total} см')
+## Суммируем рост всех членов семьи
+#total = sum(member[1] for member in my_family_height)
+#print(f'Общий рост моей семьи - {total} см')
+
+def get_father_height(family_height):
+    for member in family_height:
+        if member[0] == 'папа':
+            return member[1]
+    return None
+
+
+def get_total_height(family_height):
+    return sum(member[1] for member in family_height)
+
+
+def run():
+    print(f'Рост отца - {get_father_height(my_family_height)} см')
+    print(f'Общий рост моей семьи - {get_total_height(my_family_height)} см')
+
+
+if __name__ == "__main__":
+    run()

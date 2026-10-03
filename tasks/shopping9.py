@@ -45,7 +45,5 @@ for shop_name, products in shops.items():       # перебираем мага�
         )
 
 # 2) Для каждого продукта сортируем по цене и оставляем 2 самых дешёвых
-for name in sweets:
-    sweets[name] = sorted(sweets[name], key=lambda x: x['price'])[:2]
-
-print(sweets)
+for name, offers in sweets.items():
+    print(f"{name}: {offers}")

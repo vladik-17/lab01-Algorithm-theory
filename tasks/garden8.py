@@ -12,15 +12,15 @@ meadow = ('клевер', 'одуванчик', 'ромашка', 'клевер'
 garden_set = set(garden)
 meadow_set = set(meadow)
 
-# Выведите на консоль все виды цветов
+# Выведите на консоль все виды цветовq
 # TODO здесь ваш код
-print(garden_set | meadow_set)
+print(sorted(garden_set | meadow_set))
 # Выведите на консоль те, которые растут и там и там
 # TODO здесь ваш код
-print(garden_set & meadow_set)
+print(sorted(garden_set & meadow_set))
 # Выведите на консоль те, которые растут в саду, но не растут на лугу
 # TODO здесь ваш код
-print(garden_set - meadow_set)
+print(sorted(garden_set - meadow_set))
 # Выведите на консоль те, которые растут на лугу, но не растут в саду
 # TODO здесь ваш код
-print(meadow_set - garden_set)
+print(sorted(meadow_set - garden_set))
